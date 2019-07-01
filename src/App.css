@@ -18,9 +18,11 @@ a:hover{
 
 .card-latte {
   margin: 10px; 
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  border: 1px solid lightgray;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  */
   transition: 0.3s;
   max-width: 25rem;
+  min-width: 15rem;
 }
 .card-title {
   color: white; 
@@ -28,7 +30,7 @@ a:hover{
   font-size: 1.2em;
 }
 .card-title-container{
-  background-color: #115; 
+  background-color: #373A3C;
   height: 5rem; 
   display: flex;
   flex-direction: row;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Card, CardColumns, Col, Row, Container, CardDeck } from 'react-bootstrap';
+import { Card, Row, Container } from 'react-bootstrap';
+
 class Resources extends Component {
     render() {
         return (

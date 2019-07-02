@@ -51,11 +51,6 @@ class Activities extends Component {
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
-
-                        </Row>
-                        <div className="spacer"></div>
-                        <Row className="flex-container">
-
                             <Card className="card-latte">
                                 <Card.Header>
                                     <Card.Title className="card-title-container"><h5 className="card-title">Add a quiz<span className="breathing-room"><img src={require('../Icons/quiz.svg')} alt="quiz icon" role="presentation" /></span></h5></Card.Title>

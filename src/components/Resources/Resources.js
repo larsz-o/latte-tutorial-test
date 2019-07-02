@@ -48,11 +48,6 @@ class Resources extends Component {
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
-                        </Row>
-
-
-                        <div className="row spacer"></div>
-                        <Row noGutters className="flex-container">
                             <Card border="primary" className="card-latte">
                                 <Card.Header>
                                     <Card.Title className="card-title-container"><h5 className="card-title">Add a page<span className="breathing-room"><img src={require('../Icons/page.svg')} alt="page icon" role="presentation" /></span></h5></Card.Title>

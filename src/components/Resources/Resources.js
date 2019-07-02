@@ -7,7 +7,7 @@ class Resources extends Component {
             <div>
                 <div className="main">
                     <h3>Course Resources</h3>
-                    <p className="center">Explore how to add course resources and adjust their settings in LATTE through practice. Take a look at each resource card and try to implement its task in the <a href="#practice1">Practice Here</a> section below.</p>
+                    <p className="center">Explore how to add course resources and adjust their settings in LATTE through practice. Take a look at each resource card and try to implement its task in the Practice Here section below.</p>
                     <p className="center"><em>Stuck? Click on the "Need a hint?" link located on each card for help.</em></p><p className="center"><em>Don't forget to turn your <a href="https://docs.moodle.org/36/en/Turn_editing_on" target="_blank" rel="noopener noreferrer">editing on!</a></em></p>
 
 

@@ -28,7 +28,7 @@ a:hover{
   font-weight: bold; 
   font-size: 1.2em;
 }
-.card-title > h5 {
+.card-title-container > h5 {
   margin-left: 9px; 
 }
 .card-title-container{

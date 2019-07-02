@@ -5,10 +5,10 @@ class StudentCommunication extends Component {
     constructor(props){
         super(props);
         this.state = {
-              // list each tool we want to display in a table here as objects in an array
+            // list each tool we want to display in a table here as objects in an array
             // if you want to add another type of tool, copy this format { title: 'name of feature', text: '<html>your formatted html here</html>', img: 'your_file_name.type'},
             // make sure you place commas between each property in the object (after the closing quotation mark for each property) and between objects in the array (after the last curly brace)
-            // all text *must* be formatted as html and all images *must* be added to the icon folder in this workspace. ask Lars if you need help with this. 
+            // all text *must* be formatted as html and begin with back ticks (``) and all images *must* be added to the icon folder in this workspace. ask Lars if you need help with this. 
             tools: [
                 {title: 'Post a course announcement', text: `<p class="card-text">Share an update with students in the <a href="https://kb.brandeis.edu/display/LTS/Course+Announcements" target="_blank" rel="noopener noreferrer">Course News &amp; Announcements</a> forum.<br /><br /> <em>Try configuring the different forum settings: change the general forum to a <a href="https://www.lynda.com/Moodle-tutorials/Forum/433722/458301-4.html" target="_blank" rel="noopener noreferrer">Q+A forum</a> or a private forum for individual students to write to you directly.</em></p>
                 <a href="https://docs.moodle.org/36/en/Forum_activity" target="_blank" rel="noopener noreferrer">Need a hint?</a>`, img: 'forum.svg'},

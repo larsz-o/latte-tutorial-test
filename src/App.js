@@ -11,11 +11,13 @@ function App() {
   return (
     <Router>
       <Switch>
+        {/* we're telling the app which view to render depending on which URL the user enters into their browser */}
         <Route exact path="/" component={Instructions} />
         <Route path="/resources" component={Resources} />
         <Route path="/assessments" component={Assessments} />
         <Route path="/communication" component={StudentCommunication} />
         <Route path="/more" component={MoreLearning}/>
+        {/* if no path, create a page with a 404 message */}
         <Route render={() => <h1>404: Page Not Found</h1>}/>
       </Switch>
     </Router>

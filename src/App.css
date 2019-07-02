@@ -76,3 +76,23 @@ h3 {
 .spacer {
   height: 5vh;
 }
+table {
+  width: 100%; 
+  margin-top: 10vh;
+}
+thead {
+  padding: 15px; 
+  text-align: left; 
+  border: 1px solid #ddd;
+}
+thead > tr {
+  font-weight: bold; 
+  background-color: #115; 
+  color: white;
+}
+td {
+  padding: 15px; 
+  text-align: left; 
+  border: 1px solid #ddd;
+ }
+ 

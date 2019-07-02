@@ -15,7 +15,7 @@ class Resources extends Component {
                         <Row noGutters className="flex-container">
                             <Card border="primary" className="card-latte">
                                 <Card.Header>
-                                    <Card.Title className="card-title-container"><h5 className="card-title">Add a file<span className="breathing-room"><img src="https://moodle2.brandeis.edu/draftfile.php/1226073/user/draft/848202175/file.svg" alt="file icon" role="presentation" /></span></h5></Card.Title></Card.Header>
+                                    <Card.Title className="card-title-container"><h5 className="card-title">Add a file<span className="breathing-room"><img src={require('../Icons/file.svg')} alt="file icon" role="presentation" /></span></h5></Card.Title></Card.Header>
                                 <Card.Body>
                                     <Card.Text>
                                         <p className="card-text">Upload any File to your Sandbox course. <br /><br /><em>Try adding a few different file formats and adjusting the settings to hide and show the resource to students.</em></p>
@@ -26,7 +26,7 @@ class Resources extends Component {
 
                             <Card border="primary" className="card-latte">
                                 <Card.Header>
-                                    <Card.Title className="card-title-container"><h5 className="card-title">Create a label<span className="breathing-room"><img src="https://moodle2.brandeis.edu/draftfile.php/1226073/user/draft/848202175/label.svg" alt="label icon" role="presentation" /></span></h5></Card.Title>
+                                    <Card.Title className="card-title-container"><h5 className="card-title">Create a label<span className="breathing-room"><img src={require('../Icons/label.svg')} alt="label icon" role="presentation" /></span></h5></Card.Title>
                                 </Card.Header>
                                 <Card.Body>
                                     <Card.Text>
@@ -38,7 +38,7 @@ class Resources extends Component {
 
                             <Card border="primary" className="card-latte">
                                 <Card.Header>
-                                    <Card.Title className="card-title-container"><h5 className="card-title">Create a link<span className="breathing-room"><img src="https://moodle2.brandeis.edu/draftfile.php/1226073/user/draft/848202175/url.svg" alt="url icon" role="presentation" /></span></h5>
+                                    <Card.Title className="card-title-container"><h5 className="card-title">Create a link<span className="breathing-room"><img src={require('../Icons/url.svg')} alt="url icon" role="presentation" /></span></h5>
                                     </Card.Title>
                                 </Card.Header>
                                 <Card.Body>
@@ -55,7 +55,7 @@ class Resources extends Component {
                         <Row noGutters className="flex-container">
                             <Card border="primary" className="card-latte">
                                 <Card.Header>
-                                    <Card.Title className="card-title-container"><h5 className="card-title">Add a page<span className="breathing-room"><img src="https://moodle2.brandeis.edu/draftfile.php/1226073/user/draft/848202175/page.svg" alt="page icon" role="presentation" /></span></h5></Card.Title>
+                                    <Card.Title className="card-title-container"><h5 className="card-title">Add a page<span className="breathing-room"><img src={require('../Icons/page.svg')} alt="page icon" role="presentation" /></span></h5></Card.Title>
                                 </Card.Header>
                                 <Card.Body>
                                 <Card.Text>
@@ -68,7 +68,7 @@ class Resources extends Component {
                         
                             <Card border="primary" className="card-latte">
                                 <Card.Header>
-                                <Card.Title className="card-title-container"><h5 className="card-title">Create a folder<span className="breathing-room"><img src="https://moodle2.brandeis.edu/draftfile.php/1226073/user/draft/848202175/folder.svg" alt="folder icon" role="presentation" /></span></h5></Card.Title>
+                                <Card.Title className="card-title-container"><h5 className="card-title">Create a folder<span className="breathing-room"><img src={require('../Icons/folder.svg')} alt="folder icon" role="presentation" /></span></h5></Card.Title>
                                 </Card.Header>
                                 <Card.Body>
                                     <Card.Text>
@@ -80,7 +80,7 @@ class Resources extends Component {
                    
                         <Card border="primary" className="card-latte">
                             <Card.Header>
-                            <Card.Title className="card-title-container"><h5 className="card-title">Form a group<span className="breathing-room"><img className="grade-img" src="https://moodle2.brandeis.edu/draftfile.php/1226073/user/draft/848202175/baseline-people_outline-24px.svg" alt="group icon" role="presentation" /></span></h5></Card.Title>
+                            <Card.Title className="card-title-container"><h5 className="card-title">Form a group<span className="breathing-room"><img className="grade-img" src={require('../Icons/baseline-grid_on-24px.svg')} alt="group icon" role="presentation" /></span></h5></Card.Title>
                             </Card.Header>
                                 <Card.Body>
                                     <Card.Text>

@@ -34,16 +34,16 @@ class Resources extends Component {
                     <p className="center"><em>Stuck? Click on the "Need a hint?" link located on each card for help.</em></p><p className="center"><em>Don't forget to turn your <a href="https://docs.moodle.org/36/en/Turn_editing_on" target="_blank" rel="noopener noreferrer">editing on!</a></em></p>
                     <Container>
                         <Row noGutters className="flex-container">
+                               {/* we map over each item in the array of tools stored in local state and create a new card for each item */}
                             {this.state.resources.map((resource, i)=> {
                                 return(
                                     <Card key={i} className="card-latte">
                                         <Card.Header>
                                             <Card.Title className="card-title-container">
                                                 <h5 className="card-title">{resource.title}</h5>
-                                                {/* give a background color to the gradebook icon */}
-                                                {resource.img ==='baseline-grid_on-24px.svg' && <img className="icon-align grade-img" src={require('../Icons/' + resource.img)}/>}
-                                                {resource.img !== 'baseline-grid_on-24px.svg' && <img className="icon-align" src={require('../Icons/' + resource.img)}/>}
-                                                
+                                                {/* give a background color to the gradebook icon, and only that icon*/}
+                                                {resource.img ==='baseline-grid_on-24px.svg' && <img className="icon-align grade-img" src={require('../Icons/' + resource.img)} alt="gradebook"/>}
+                                                {resource.img !== 'baseline-grid_on-24px.svg' && <img className="icon-align" src={require('../Icons/' + resource.img)} alt={resource.img}/>}
                                             </Card.Title>
                                         </Card.Header>
                                         <Card.Body>

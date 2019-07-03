@@ -2,6 +2,30 @@ import React, { Component } from 'react';
 import { Card, Row, Container } from 'react-bootstrap';
 
 class Activities extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            // list each tool we want to display in a table here as objects in an array
+            // if you want to add another type of tool, copy this format { title: 'name of feature', text: '<html>your formatted html here</html>', img: 'your_file_name.type'},
+            // make sure you place commas between each property in the object (after the closing quotation mark for each property) and between objects in the array (after the last curly brace)
+            // all text *must* be formatted as html and begin with back ticks (``) and all images *must* be added to the icon folder in this workspace. ask Lars if you need help with this. 
+            tools: [
+                {title: 'Add a file submission assignment', text: `<p class="card-text">This will allow students to <a href="https://www.lynda.com/Moodle-tutorials/Assignment/511293/583709-4.html" target="_blank" rel="noopener noreferrer">upload a variety of document formats</a> for your review.<br /><br /> <em>Try adjusting 2-3 of the settings. Instructors have control over assignment visibility, due date, feedback format, and much more.</em></p>
+                <a href="https://docs.moodle.org/36/en/Assignment_quick_guide" target="_blank" rel="noopener noreferrer">Need a hint?</a>`, img: 'assignment.svg'},
+                {title: 'Create a LATTE native assignment', text: `<p class="card-text">Take a <a href="https://kb.brandeis.edu/display/LTS/Create+Online+Assignments" target="_blank" rel="noopener noreferrer">closer look</a> at the "Submission Types" option to change "file submissions" to "online text."<br /><br /> <em>Which features change between the two formats?</em></p>
+                <a href="https://docs.moodle.org/36/en/Assignment_quick_guide" target="_blank" rel="noopener noreferrer">Need a hint?</a>`, img: 'assignment.svg'},
+                {title: 'Make an offline assignment', text: `<p class="card-text">Include assignments that are completed entirely offline to your grade book by adjusting the "Setup" in your <a href="https://kb.brandeis.edu/display/LTS/Using+the+Gradebook" target="_blank" rel="noopener noreferrer">Grade book.</a> <br /><br /> <em>Try changing the grading scale.</em></p>
+                <a href="https://docs.moodle.org/36/en/Grader_report" target="_blank" rel="noopener noreferrer">Need a hint?</a>`, img: 'assignment.svg'},
+                {title: 'Add a quiz', text: `<p class="card-text">Make <a href="https://kb.brandeis.edu/display/LTS/Quiz+Your+Students+Using+LATTE" target="_blank" rel="noopener noreferrer">a quiz</a> to assess student comprehension. Include at least one of each type of question: multiple choice, true/false, short answer, and essay.<br /><br /> <em> Try setting the open and close dates for the <a href="https://www.lynda.com/Moodle-tutorials/Quiz/511293/583710-4.html" target="_blank" rel="noopener noreferrer">quiz</a> and limiting the number of attempts allowed.</em></p>
+                <a href="https://docs.moodle.org/36/en/Quiz_quick_guide" target="_blank" rel="noopener noreferrer">Need a hint?</a>`, img: 'quiz.svg'},
+                {title: 'Grade an assignment', text: `<p class="card-text">Give a numerical grade and some comments on an assignment.<br /><br /> <em> Hint: You can grade the "offline" assignment you just created.</em></p>
+                <a href="https://docs.moodle.org/36/en/Grading_quick_guide" target="_blank" rel="noopener noreferrer">Need a hint?</a>`, img: 'baseline-grid_on-24px.svg'},
+                {title: 'Give feedback on a discussion post', text: `<p class="card-text">Post to the discussion forum and then post some feedback on that post.<br /><br /> <em> How would you record a grade for each student on a forum post?</em></p>
+                <a href="https://docs.moodle.org/36/en/Forum_activity" target="_blank" rel="noopener noreferrer">Need a hint?</a>`, img: 'forum.svg'}
+
+            ]
+        }
+    }
     render() {
         return (
             <div>
@@ -12,78 +36,26 @@ class Activities extends Component {
 
                     <Container>
                         <Row noGutters className="flex-container">
-
-                            <Card className="card-latte">
-                                <Card.Header>
-                                    <Card.Title className="card-title-container">
-                                        <h5 className="card-title">Add a file submission assignment<span className="breathing-room"><img src={require('../Icons/assignment.svg')} alt="assignment icon" role="presentation" /></span></h5>
-                                    </Card.Title>
-                                </Card.Header>
-                                <Card.Body>
-                                    <Card.Text>
-                                        <p class="card-text">This will allow students to <a href="https://www.lynda.com/Moodle-tutorials/Assignment/511293/583709-4.html" target="_blank" rel="noopener noreferrer">upload a variety of document formats</a> for your review.<br /><br /> <em>Try adjusting 2-3 of the settings. Instructors have control over assignment visibility, due date, feedback format, and much more.</em></p>
-                                        <a href="https://docs.moodle.org/36/en/Assignment_quick_guide" target="_blank" rel="noopener noreferrer">Need a hint?</a>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-
-
-                            <Card className="card-latte">
-                                <Card.Header>
-                                    <Card.Title className="card-title-container"><h5 className="card-title">Create a LATTE native assignment<span className="breathing-room"><img src={require('../Icons/assignment.svg')} alt="assignment icon" role="presentation" /></span></h5></Card.Title>
-                                </Card.Header>
-                                <Card.Body>
-                                    <Card.Text>
-                                        <p class="card-text">Take a <a href="https://kb.brandeis.edu/display/LTS/Create+Online+Assignments" target="_blank" rel="noopener noreferrer">closer look</a> at the "Submission Types" option to change "file submissions" to "online text."<br /><br /> <em>Which features change between the two formats?</em></p>
-                                        <a href="https://docs.moodle.org/36/en/Assignment_quick_guide" target="_blank" rel="noopener noreferrer">Need a hint?</a>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-
-                            <Card className="card-latte">
-                                <Card.Header>
-                                    <Card.Title className="card-title-container"><h5 className="card-title">Make an offline assignment<span className="breathing-room"><img src={require('../Icons/assignment.svg')} alt="assignment icon" role="presentation" /></span></h5></Card.Title>
-                                </Card.Header>
-                                <Card.Body>
-                                    <Card.Text>
-                                        <p class="card-text">Include assignments that are completed entirely offline to your grade book by adjusting the "Setup" in your <a href="https://kb.brandeis.edu/display/LTS/Using+the+Gradebook" target="_blank" rel="noopener noreferrer">Grade book.</a> <br /><br /> <em>Try changing the grading scale.</em></p>
-                                        <a href="https://docs.moodle.org/36/en/Grader_report" target="_blank" rel="noopener noreferrer">Need a hint?</a>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                            <Card className="card-latte">
-                                <Card.Header>
-                                    <Card.Title className="card-title-container"><h5 className="card-title">Add a quiz<span className="breathing-room"><img src={require('../Icons/quiz.svg')} alt="quiz icon" role="presentation" /></span></h5></Card.Title>
-                                </Card.Header>
-                                <Card.Body>
-                                    <Card.Text>
-                                        <p class="card-text">Make <a href="https://kb.brandeis.edu/display/LTS/Quiz+Your+Students+Using+LATTE" target="_blank" rel="noopener noreferrer">a quiz</a> to assess student comprehension. Include at least one of each type of question: multiple choice, true/false, short answer, and essay.<br /><br /> <em> Try setting the open and close dates for the <a href="https://www.lynda.com/Moodle-tutorials/Quiz/511293/583710-4.html" target="_blank" rel="noopener noreferrer">quiz</a> and limiting the number of attempts allowed.</em></p>
-                                        <a href="https://docs.moodle.org/36/en/Quiz_quick_guide" target="_blank" rel="noopener noreferrer">Need a hint?</a>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                            <Card className="card-latte">
-                                <Card.Header>
-                                    <Card.Title className="card-title-container"><h5 className="card-title">Grade an assignment<span className="breathing-room"><img className="grade-img" src={require('../Icons/baseline-grid_on-24px.svg')} alt="gradebook icon" role="presentation" /></span></h5></Card.Title>
-                                </Card.Header>
-                                <Card.Body>
-                                    <Card.Text>
-                                        <p class="card-text">Give a numerical grade and some comments on an assignment.<br /><br /> <em> Hint: You can grade the "offline" assignment you just created.</em></p>
-                                        <a href="https://docs.moodle.org/36/en/Grading_quick_guide" target="_blank" rel="noopener noreferrer">Need a hint?</a>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                            <Card className="card-latte">
-                                <Card.Header>
-                                    <Card.Title className="card-title-container"><h5 className="card-title">Give feedback on a discussion post<span className="breathing-room"><img src={require('../Icons/forum.svg')} alt="forum icon" role="presentation" /></span></h5></Card.Title>
-                                </Card.Header>
-                                <Card.Body>
-                                    <Card.Text>
-                                        <p class="card-text">Post to the discussion forum and then post some feedback on that post.<br /><br /> <em> How would you record a grade for each student on a forum post?</em></p>
-                                        <a href="https://docs.moodle.org/36/en/Forum_activity" target="_blank" rel="noopener noreferrer">Need a hint?</a>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
+                            {/* we map over each item in the array of tools stored in local state and create a new card for each item */}
+                            {this.state.tools.map((tool, i) => {
+                                return(
+                                    <Card key={i} className="card-latte">
+                                        <Card.Header>
+                                            <Card.Title className="card-title-container">
+                                                <h5 className="card-title">{tool.title}</h5>
+                                                  {/* give a background color to the gradebook icon, and only that icon */}
+                                                {tool.img !== 'baseline-grid_on-24px.svg' && <img className="icon-align" src={require('../Icons/' + tool.img)} alt={tool.img}/>}
+                                                {tool.img === 'baseline-grid_on-24px.svg' && <img src={require( '../Icons/' + tool.img)} alt="gradebook" className="icon-align grade-img"/>}
+                                            </Card.Title>
+                                        </Card.Header>
+                                        <Card.Body>
+                                            <Card.Text>
+                                                <div dangerouslySetInnerHTML={{__html: tool.text}}/>
+                                            </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                );
+                            })}
                         </Row>
                     </Container>
                 </div>

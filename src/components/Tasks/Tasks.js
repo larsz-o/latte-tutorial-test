@@ -33,7 +33,8 @@ class Tasks extends Component {
         return(
             <div>
                 <h3>Practice Here</h3>
-                <p>Complete the following tasks in the space provided below.</p>
+                <p>Complete the following tasks in the space provided below or in the appropriate location within LATTE.</p>
+                <p>You can mark each task as complete by clicking the check box next to the labels that read "Task #, Task #," etc.</p>
                 <p><i> (Hint: Try clicking on "Add an activity or resource")</i></p>
                 <div className="spacer"></div>
                 <ul className="no-decorations">
@@ -47,7 +48,7 @@ class Tasks extends Component {
                         );
                     })}
                 </ul>
-                <p>You can mark each task as complete by clicking the check box next to the labels that read "Task #, Task #," etc.</p>
+            
             </div>
         );
     }

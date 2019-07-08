@@ -4,9 +4,11 @@ This is a little web app to help our team with version control when creating, di
 ## Getting Started
 To update this project, begin by forking and cloning the repository to your local machine. Navigate to the working directory, open your files in your text editor, and start the development server. 
 
-`git clone https://github.com/larsz-o/latte-tutorial-test.git`
-`cd latte-tutorial-test`
-`npm start`
+~~~~
+git clone https://github.com/larsz-o/latte-tutorial-test.git
+cd latte-tutorial-test
+npm start
+~~~~
 
 ## What should I edit? 
 If you would like to make a change to the content - a broken link, some text, an image - you can do so by editing the data that is stored in the local state of the various components. 

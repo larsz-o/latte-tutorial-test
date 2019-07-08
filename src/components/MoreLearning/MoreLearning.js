@@ -25,7 +25,7 @@ class MoreLearning extends Component {
         return (
             <div className="main">
                     <h3>More Resources</h3>
-                    <p className="center">Just can't get enough? Try working your way through all of the available <a href="https://docs.moodle.org/36/en/Activities" target="_blank" rel="noopener noreferrer">activities.</a> There is so much to explore in LATTE - the sky is the limit for how you can use different tools to enhance your teaching and promote student engagement.&nbsp;</p><p className="center"><br /> Try implementing some of these other features in the Practice Here or Your Experimental Space sections below:</p>
+                    <p className="center">Just can't get enough? Try working your way through all of the available <a href="https://docs.moodle.org/36/en/Activities" target="_blank" rel="noopener noreferrer">activities.</a> There is so much to explore in LATTE - the sky is the limit for how you can use different tools to enhance your teaching and promote student engagement.&nbsp;</p><p className="center"><br /> Try implementing some of these other features in the Practice Here or Your Experimental Space sections below.</p>
              
                 <table>
                     <thead>

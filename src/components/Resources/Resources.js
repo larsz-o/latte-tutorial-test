@@ -21,7 +21,7 @@ class Resources extends Component {
                 {title: 'Create a folder', text: `<p className="card-text">Add a Folder to help organize your resources.<br /><br /><em> Try adjusting how the folder's contents are displayed.</em></p>
                 <a href="https://docs.moodle.org/36/en/Folder_resource" className="blockquote-footer" target="_blank" rel="noopener noreferrer">Need a hint?</a>`, img: 'folder.svg'},
                 {title: 'Form a group', text: `<p className="card-text">Watch <a href="http://www.lynda.com/Moodle-tutorials/Creating-groups-collaborative-work/370012/406867-4.html?org=brandeis.edu" target="_blank" rel="noopener noreferrer">this video</a> to learn about how to add students to <a href="https://kb.brandeis.edu/display/LTS/Create+and+Use+Groups+in+a+Course" target="_blank" rel="noopener noreferrer">groups</a>. Then, create a group, give it a name, and add yourself to it.<br /><br /><em>Since you are the only enrolled user in this course, you'll have to wait to sort students into groups until you get your course LATTE page.</em></p>
-                <a href="https://docs.moodle.org/36/en/Groups" className="blockquote-footer" target="_blank" rel="noopener noreferrer">Need a hint?</a>`, img: 'baseline-grid_on-24px.svg'}
+                <a href="https://docs.moodle.org/36/en/Groups" className="blockquote-footer" target="_blank" rel="noopener noreferrer">Need a hint?</a>`, img: 'group_choice.svg'}
             ]
         }
     }
@@ -42,7 +42,7 @@ class Resources extends Component {
                                             <Card.Title className="card-title-container">
                                                 <h5 className="card-title">{resource.title}</h5>
                                                 {/* give a background color to the gradebook icon, and only that icon*/}
-                                                {resource.img ==='baseline-grid_on-24px.svg' && <img className="icon-align grade-img" src={require('../Icons/' + resource.img)} alt="gradebook"/>}
+                                                {resource.img ==='baseline-grid_on-24px.svg' && <img className="icon-align grade-img" src={require('../Icons/' + resource.img)} alt="gradebook" />}
                                                 {resource.img !== 'baseline-grid_on-24px.svg' && <img className="icon-align" src={require('../Icons/' + resource.img)} alt={resource.img}/>}
                                             </Card.Title>
                                         </Card.Header>

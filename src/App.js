@@ -8,6 +8,7 @@ import StudentCommunication from './components/StudentCommunication/StudentCommu
 import MoreLearning from './components/MoreLearning/MoreLearning';
 import Experiment from './components/Experiment/Experiment';
 import Tasks from './components/Tasks/Tasks';
+import Grading from './components/Grading/Grading';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/more" component={MoreLearning}/>
         <Route path="/experiment" component={Experiment}/>
         <Route path="/tasks/:type" component={Tasks}/>
+        <Route path="/grading" component={Grading}/>
         {/* if no path, create a page with a 404 message */}
         <Route render={() => <h1>404: Page Not Found</h1>}/>
       </Switch>

@@ -8,15 +8,20 @@ class Tasks extends Component {
         this.state = {
             tasks: [
                 {type: 'resource', task: 'Add a file'}, 
-                {type: 'resource', task: 'Create a URL'},
                 {type: 'resource', task: 'Create a label'},
-                {type: 'resource', task: 'Create a page'}, 
-                {type: 'resource', task: 'Navigate to the "Participants" page to create a new group'}, 
-                {type: 'assignment', task: 'Create a quiz'},
+                {type: 'resource', task: 'Create a link'},
+                {type: 'resource', task: 'Add a page'}, 
+                {type: 'resource', task: 'Create a folder'}, 
+                {type: 'resource', task: 'Navigate to the "Participants" page to form a new group'}, 
                 {type: 'assignment', task: 'Add a file submission assignment'}, 
                 {type: 'assignment', task: 'Create a LATTE native assignment'}, 
-                {type: 'assignment', task: 'Navigate to the Gradebook to practice creating and grading offline assignments'},
-                {type: 'assignment', task: 'Create and respond to a discussion forum post'},
+                {type: 'assignment', task: 'Add a quiz'},
+                {type: 'assignment', task: 'Create a new discussion forum thread'},
+                {type: 'grading', task: 'Set up your Gradebook'},
+                {type: 'grading', task: 'Make an offline assignment'},
+                {type: 'grading', task: 'Grade an assignment'},
+                {type: 'grading', task: `View a student's grades`},
+                {type: 'grading', task: 'Export grades'},
                 {type: 'communication', task: 'Post a course announcement'},
                 {type: 'communication', task: 'Set up your digital office hours'}
             ]
@@ -42,7 +47,7 @@ class Tasks extends Component {
                         );
                     })}
                 </ul>
-                <p>You can mark each task as complete by clicking the check box next to the labels that read "Task 1, Task 2," etc.</p>
+                <p>You can mark each task as complete by clicking the check box next to the labels that read "Task #, Task #," etc.</p>
             </div>
         );
     }

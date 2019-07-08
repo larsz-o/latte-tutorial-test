@@ -14,15 +14,10 @@ class Activities extends Component {
                 <a href="https://docs.moodle.org/36/en/Assignment_quick_guide" target="_blank" rel="noopener noreferrer">Need a hint?</a>`, img: 'assignment.svg'},
                 {title: 'Create a LATTE native assignment', text: `<p class="card-text">Take a <a href="https://kb.brandeis.edu/display/LTS/Create+Online+Assignments" target="_blank" rel="noopener noreferrer">closer look</a> at the "Submission Types" option to change "file submissions" to "online text."<br /><br /> <em>Which features change between the two formats?</em></p>
                 <a href="https://docs.moodle.org/36/en/Assignment_quick_guide" target="_blank" rel="noopener noreferrer">Need a hint?</a>`, img: 'assignment.svg'},
-                {title: 'Make an offline assignment', text: `<p class="card-text">Include assignments that are completed entirely offline to your grade book by adjusting the "Setup" in your <a href="https://kb.brandeis.edu/display/LTS/Using+the+Gradebook" target="_blank" rel="noopener noreferrer">Grade book.</a> <br /><br /> <em>Try changing the grading scale.</em></p>
-                <a href="https://docs.moodle.org/36/en/Grader_report" target="_blank" rel="noopener noreferrer">Need a hint?</a>`, img: 'assignment.svg'},
                 {title: 'Add a quiz', text: `<p class="card-text">Make <a href="https://kb.brandeis.edu/display/LTS/Quiz+Your+Students+Using+LATTE" target="_blank" rel="noopener noreferrer">a quiz</a> to assess student comprehension. Include at least one of each type of question: multiple choice, true/false, short answer, and essay.<br /><br /> <em> Try setting the open and close dates for the <a href="https://www.lynda.com/Moodle-tutorials/Quiz/511293/583710-4.html" target="_blank" rel="noopener noreferrer">quiz</a> and limiting the number of attempts allowed.</em></p>
                 <a href="https://docs.moodle.org/36/en/Quiz_quick_guide" target="_blank" rel="noopener noreferrer">Need a hint?</a>`, img: 'quiz.svg'},
-                {title: 'Grade an assignment', text: `<p class="card-text">Give a numerical grade and some comments on an assignment.<br /><br /> <em> Hint: You can grade the "offline" assignment you just created.</em></p>
-                <a href="https://docs.moodle.org/36/en/Grading_quick_guide" target="_blank" rel="noopener noreferrer">Need a hint?</a>`, img: 'baseline-grid_on-24px.svg'},
-                {title: 'Give feedback on a discussion post', text: `<p class="card-text">Post to the discussion forum and then post some feedback on that post.<br /><br /> <em> How would you record a grade for each student on a forum post?</em></p>
-                <a href="https://docs.moodle.org/36/en/Forum_activity" target="_blank" rel="noopener noreferrer">Need a hint?</a>`, img: 'forum.svg'}
-
+                {title: 'Create a new discussion forum thread', text: `<p class="card-text">Start a new discussion topic in the forum provided (or create a new forum!). Then, post to the discussion forum and then post some feedback on that post.<br /><br /> <em> How would you record a grade for each student on a forum post?</em></p>
+                <a href="https://docs.moodle.org/36/en/Forum_activity" target="_blank" rel="noopener noreferrer">Need a hint?</a>`, img: 'forum.svg'},
             ]
         }
     }

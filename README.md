@@ -2,11 +2,12 @@
 This is a little web app to help our team with version control when creating, distributing, and updating Instructor Sandbox courses. 
 
 ## Getting Started
-To update this project, begin by forking and cloning the repository to your local machine. Navigate to the working directory, open your files in your text editor, and start the development server. 
+To update this project, begin by forking and cloning the repository to your local machine. Navigate to the working directory, open your files in your text editor, and start the development server. You will need to install Node to run this application locally. 
 
 ~~~~
 git clone https://github.com/larsz-o/latte-tutorial-test.git
 cd latte-tutorial-test
+npm install 
 npm start
 ~~~~
 

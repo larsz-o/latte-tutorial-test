@@ -78,6 +78,9 @@ h3 {
   margin-top: 5vh;
   margin-bottom: 10vh; 
 }
+.no-decorations {
+  list-style-type: none;
+}
 .spacer {
   height: 5vh;
 }

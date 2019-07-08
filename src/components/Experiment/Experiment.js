@@ -5,7 +5,7 @@ class Experiment extends Component {
         return (
             <div>
                 <h3>Use this space to try out any tools or layouts you'd like!</h3>
-               <div class="center">
+               <div className="center">
                <img src={require('../Icons/scientist.png')} alt="scientist"/>
                 </div> 
             </div>

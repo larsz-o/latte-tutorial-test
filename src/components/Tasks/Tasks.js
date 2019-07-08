@@ -28,19 +28,21 @@ class Tasks extends Component {
         return(
             <div>
                 <h3>Practice Here</h3>
-                <p>Complete the following tasks in the space provided below. You can mark each task as complete by clicking the check box next to the labels that read "Task 1, Task 2," etc.</p>
+                <p>Complete the following tasks in the space provided below.</p>
                 <p><i> (Hint: Try clicking on "Add an activity or resource")</i></p>
+                <div className="spacer"></div>
                 <ul className="no-decorations">
                     {this.state.tasks.map((todo, i) => {
                         return(
                            <div key={i}>
                                {/* we're using the route parameters to determine which tasks appear in our unordered list. if the parameter matches the 
                                'type' of the object, we'll display it.  */}
-                               {currentTask === todo.type && <li>Task {i+1}: &nbsp; {todo.task}</li>}
+                               {currentTask === todo.type && <li className="bigger">Task {i+1}: &nbsp; {todo.task}</li>}
                            </div>
                         );
                     })}
                 </ul>
+                <p>You can mark each task as complete by clicking the check box next to the labels that read "Task 1, Task 2," etc.</p>
             </div>
         );
     }

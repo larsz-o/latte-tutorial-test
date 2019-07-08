@@ -9,6 +9,10 @@ a:hover{
   text-decoration: underline; 
   color: #0b4f8a; 
 }
+.bigger{
+  font-size: 1.1em;
+  line-height: 1.8;
+}
 .breathing-room {
   padding: .5vw;
 }

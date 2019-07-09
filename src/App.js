@@ -23,7 +23,7 @@ function App() {
         <Route path="/experiment" component={Experiment}/>
         <Route path="/tasks/:type" component={Tasks}/>
         <Route path="/grading" component={Grading}/>
-        {/* if no path, create a page with a 404 message */}
+        {/* if none of these paths, create a page with a 404 message */}
         <Route render={() => <h1>404: Page Not Found</h1>}/>
       </Switch>
     </Router>

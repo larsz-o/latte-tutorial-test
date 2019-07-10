@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Card, Row, Container } from 'react-bootstrap';
+import { Row, Container } from 'react-bootstrap';
+import TaskCard from '../TaskCard/TaskCard'; 
 
 class Activities extends Component {
     constructor(props) {
@@ -42,22 +43,7 @@ class Activities extends Component {
                             {/* we map over each item in the array of tools stored in local state and create a new card for each item */}
                             {this.state.tools.map((tool, i) => {
                                 return (
-                                    // todo: create a card component and refactor code to reduce overall number of components. use routing parameters instead of separate components to display correct information
-                                    <Card key={i} className="card-latte">
-                                        <Card.Header>
-                                            <Card.Title className="card-title-container">
-                                                <h5 className="card-title">{tool.title}</h5>
-                                                {/* give a background color to the gradebook icon, and only that icon */}
-                                                {tool.img !== 'baseline-grid_on-24px.svg' && <img className="icon-align" src={require('../Icons/' + tool.img)} alt={tool.img} />}
-                                                {tool.img === 'baseline-grid_on-24px.svg' && <img src={require('../Icons/' + tool.img)} alt="gradebook" className="icon-align grade-img" />}
-                                            </Card.Title>
-                                        </Card.Header>
-                                        <Card.Body>
-                                            <Card.Text>
-                                                <div dangerouslySetInnerHTML={{ __html: tool.text }} />
-                                            </Card.Text>
-                                        </Card.Body>
-                                    </Card>
+                                  <TaskCard key={i} data={tool}/>
                                 );
                             })}
                         </Row>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Card, Row, Container } from 'react-bootstrap';
+import { Row, Container } from 'react-bootstrap';
+import TaskCard from '../TaskCard/TaskCard';
 
 class StudentCommunication extends Component {
     constructor(props) {
@@ -34,18 +35,7 @@ class StudentCommunication extends Component {
                             {/* we map over each item in the array of tools stored in local state and create a new card for each item */}
                             {this.state.tools.map((tool, i) => {
                                 return (
-                                    <Card key={i} className="card-latte">
-                                        <Card.Header>
-                                            <Card.Title className="card-title-container">
-                                                <h5 className="card-title">{tool.title}</h5><img className="icon-align" src={require('../Icons/' + tool.img)} alt={tool.img} />
-                                            </Card.Title>
-                                        </Card.Header>
-                                        <Card.Body>
-                                            <Card.Text>
-                                                <div dangerouslySetInnerHTML={{ __html: tool.text }} />
-                                            </Card.Text>
-                                        </Card.Body>
-                                    </Card>
+                                    <TaskCard key={i} data={tool} />
                                 );
                             })}
                         </Row>

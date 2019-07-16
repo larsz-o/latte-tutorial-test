@@ -29,6 +29,7 @@ class Tasks extends Component {
     }
 
     render(){
+        // the params.type tells us what type of resource the user is trying to view
         let currentTask = this.props.match.params.type;
         return(
             <div>

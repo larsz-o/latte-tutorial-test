@@ -32,7 +32,7 @@ class Tasks extends Component {
         let currentTask = this.props.match.params.type;
         return(
             <div>
-                <h3>Practice Here</h3>
+                <h3>Practice</h3>
                 <p>Complete the following tasks in the space provided below or in the appropriate location within LATTE.</p>
                 <p>You can mark each task as complete by clicking the check box next to the labels that read "Task #, Task #," etc.</p>
                 <p><i> (Hint: Try clicking on "Add an activity or resource")</i></p>
